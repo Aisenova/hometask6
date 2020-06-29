@@ -1,0 +1,178 @@
+<html>
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>Bootstrap form</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body> 
+  <form action="https://www.w3schools.com/action_page.php">
+    <style>
+      body { background: url(sky.jpg);    background-size: cover }
+    </style> 
+<div class="container" >  
+<div class="row"> <div class="col-12 pb-5">
+  <a href="bootstrap.html" class="btn btn-link">
+    <Назад</a>
+        <h1>Регистрация на рейс</h1>  </div></div> 
+
+<div class="row"> 
+       <div class="col-12 col-md-4"> <div class="form-group">  
+      <label for="depart"> Город вылета </label>
+    <select class="form-control" id="depart">
+      <option value="TSE">Астана</option>
+      <option value="ALA">Алматы</option>
+      <option value="MSW">Москва</option>
+      <option value="IEV">Киев</option>
+    </select>
+  </div> </div> 
+
+   <div class="col-12 col-md-4"> <div class="form-group">  
+    <label for="arriv"> Город прибытия  </label>
+        <select class="form-control" id="arriv">
+            <option value="TSE">Астана</option>
+            <option value="ALA">Алматы</option>
+            <option value="MSW">Москва</option>
+            <option value="IEV">Киев</option>
+        </select>
+      </div> </div> 
+  
+       <div class="col-12 col-md-4"> <div class="form-group">  
+        <label for="depdate">  Дата отправления  </label>
+        <input type="date" name="depdate" class="form-control" id="depdate"> 
+            </div> 
+          </div> </div> 
+
+       <form>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="form-group"> 
+                <label for="lname">Фамилия</label>
+                <input type="text" class="form-control" id="lname" aria-describedby="lnameHelp">
+              </div> </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group"> 
+                  <label for="fname">Имя</label>
+                  <input type="text" class="form-control" id="fname" aria-describedby="fnameHelp">
+                </div> </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group"> 
+                      <label for="mname">Отчество</label>
+                    <input type="text" class="form-control" id="lname" aria-describedby="mnameHelp">
+                  </div> 
+                </div>
+            </div>
+
+  <div class="row">
+    <div class="col-12 col-md-4">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="Email">
+    </div> 
+  </div>
+</div>
+
+  <div class="row"> 
+  <div class="col-12"> 
+  <div class="form-group">
+    <label for="purpose">Цель поездки </label>
+    <textarea class="form-control" id="purpose" rows="3"></textarea>
+  </div></div></div>
+  
+  <div class="row"> <div class="col-12 col-md-4">
+    <h5> Выберите класс </h5>  
+  <div  class="form-check">
+    <input class="form-check-input" type="radio" name="econom" id="econom" value="option1" checked>
+    <label class="form-check-label" for="econom"> Эконом класс  </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" name="bussin" id="bussin" value="option2">
+    <label class="form-check-label" for="bussin"> Бизнес класс  </label>
+  </div>
+  <div class="form-check disabled">
+    <input class="form-check-input" type="radio" name="pilot" id="pilot" value="option3" disabled>
+    <label class="form-check-label" for="pilot">
+      В кабине пилота  </label>
+  </div></div>
+    
+  
+  <div class="col-12 col-md-4"> 
+    <h5> Дополнительно </h5>  
+    <div class="form-check">  
+    <input class="form-check-input" type="checkbox" value="" id="bgg">
+    <label class="form-check-label" for="bgg"> Ручная кладь </label>
+  </div> 
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="bgg1">
+    <label class="form-check-label" for="bgg1"> Багаж (до 20 кг) </label>
+  </div>  </div></div>
+
+  <div class="row pt-3"> 
+    <div class="col-12 text-center"> 
+  <button type="submit" value="Submit" class="btn btn-primary mr-2"> Зарегистрироваться </button>
+  <button type="reset" value="Reset" class="btn btn secondary"> Сбросить </button>
+  </div></div>
+
+  <div class="row pt-5"> 
+    <div class="col-12">
+      <nav> 
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Важная информация</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Дополнительно</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Правила перевозки багажа</a>
+    </li>
+  </ul> </nav>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">   
+      <ul> 
+        <li>Регистрация заканчивается за час до вылета.</li>
+        <li>В ручной клади запрещается провоз колюще-режущих предметов, аэрозольных баллончиков, оружья. </li>
+        <li>На борту запрещается распитие алкогольных напитков</li>
+   </ul></div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> Помимо авиабилетов, Вы можете приобрести на нашем сайте 
+      <ul>
+        <li>Страховой полис на время полета </li>
+        <li>Медицинскую страховку для путешествий</li>
+        <li>а также имеется возможность забронировать номер в любом отеле мира</li>
+      </ul> </div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Не разрашается провоз следующих животных: 
+    
+    <div class="row">
+    <div class="col-12 col-md-6 col-lg-3">
+    <img src="tiger.jpg" alt="tiger.jpg" style="width: 200px; height: 150px;">
+    </div>
+
+       <div class="col-12 col-md-6 col-lg-3">
+       <img src="fox.jpg" alt="fox.jpg" style="width: 200px; height: 150px;">
+       </div>
+               
+       <div class="col-12 col-md-6 col-lg-3">
+        <img src="cat.jpg" alt="cat.jpg" style="width: 200px; height: 150px;">
+       </div>      
+
+    <div class="col-12 col-md-6 col-lg-3">
+        <img src="fox.jpg" alt="cat.jpg" style="width: 200px; height: 150px;">
+       </div>      
+       </div>    
+    </div>
+  </div>
+
+
+  
+</body>
+</html>
